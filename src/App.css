@@ -1,0 +1,21 @@
+.index {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.body {
+  background-image: url('./assets/virion.png');
+  background-size: 100vh;
+  
+}
+.footer {
+  background-image: url('./assets/footer.png');
+  height: 65px;
+  background-repeat: no-repeat;
+  margin-left:30%;
+  padding-bottom: 20px;
+  margin-top: -90px;
+}
