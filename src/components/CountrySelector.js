@@ -1,7 +1,30 @@
 import React from "react";
 import { useState } from "react";
+import styled from "styled-components";
+
 import useStats from "./useStats";
 import CountrySelected from "./CountrySelected";
+
+const Select = styled.select`
+  width: 80%;
+  height: 35px;
+  background: white;
+  color: black;
+  padding-left: 5px;
+  font-size: 18px;
+  border: none;
+  margin-left: 10px;
+
+  option {
+    color: black;
+    background: white;
+    display: flex;
+    white-space: pre;
+    min-height: 30px;
+    padding: 0px 2px 1px;
+  }
+`;
+
 
 export default function CountrySelector() {
   const { stats: countries, loading, error } = useStats(
@@ -21,8 +44,14 @@ export default function CountrySelector() {
     oldStructure.iso3[country.iso2] = country.iso3;
   }
   return (
-    <div>
-      {/* <select
+    <div>               
+      <CountrySelected
+        url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}
+      />
+
+    <div className="select"> 
+    <h1 > Selecione um país </h1>
+      <Select
         onChange={e => {
           setSelectedCountry(e.target.value);
         }}
@@ -36,10 +65,10 @@ export default function CountrySelector() {
             {country}
           </option>
         ))}
-      </select> */}
-      <CountrySelected
-        url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}
-      />
+      </Select>  
+    
+    </div>
+     
     </div>
   );
 }

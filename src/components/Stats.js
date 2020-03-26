@@ -11,7 +11,7 @@ const StatBlock = styled.div`
   background: rgba(255, 255, 255, 0.82);
   font-size: 1.7rem;
   padding: 1rem 2rem 1rem 2rem;
-  margin-top: -130px;
+  margin-top: -236px;
 `;
 
 export default function Stats({ url }) {
