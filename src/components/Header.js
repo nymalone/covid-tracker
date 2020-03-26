@@ -11,6 +11,13 @@ const Title = styled.section`
   font-size: 25px;
   color: black;
   text-align: center;
+
+  @media (min-width: 767px) {
+    width: 52%;
+    font-size: 35px;
+    font-weigth: bold;
+   
+  }
 `;
 
 const Header = () => (

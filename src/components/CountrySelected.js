@@ -6,12 +6,22 @@ const StatGrid = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 767px) {
+    display: column;
+  }
 `;
 const StatBlock = styled.div`
   background: rgba(255, 255, 255, 0.82);
   font-size: 1.7rem;
   padding: 1rem 2rem 1rem 2rem;
   margin-top: -130px;
+
+  @media (min-width: 767px) {
+    width: 80%;
+    font-size: 33px;
+    margin-top: 60px;
+  }
 `;
 
 
