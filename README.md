@@ -1,5 +1,6 @@
 # COVID-19 Tracker 
-### [Check the site](https://semantix-chart.netlify.com/) 
+
+### [Check the site](https://covid-stats-tracker.netlify.com/) 
 
 :computer: desktop only! 
 
